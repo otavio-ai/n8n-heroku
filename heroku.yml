@@ -2,7 +2,8 @@ setup:
     addons:
       - plan: heroku-postgresql
         as: DATABASE
-
+        options:
+          version: "15"
 build:
     docker:
         web: Dockerfile
